@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRS Rider Registration Form</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Bike Race Series (BRS)</h1>
+    <h2>Rider Registration Form</h2>
+
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>First Name
+            <input type="text" name="firstName" required>
+        </label>
+
+        <label>Last Name
+            <input type="text" name="lastName" required>
+        </label>
+
+        <label>Street Address
+            <input type="text" name="address">
+        </label>
+
+        <label>City
+            <input type="text" name="city">
+        </label>
+
+        <label>Postal Code
+            <input type="text" name="postalCode">
+        </label>
+
+        <label>Country
+            <input type="text" name="country">
+        </label>
+
+        <label>Date of Birth
+            <input type="date" name="dob">
+        </label>
+
+        <label>Age
+            <input type="number" name="age" min="0">
+        </label>
+
+        <div class="radio-group">
+            <p>Gender</p>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Other</label>
+            <label><input type="radio" name="gender"> Prefer not to say</label>
+        </div>
+    </fieldset>
+
+   
+    <fieldset>
+        <legend>Contact Information</legend>
+
+        <label>Mobile Phone
+            <input type="tel" name="phone">
+        </label>
+
+        <label>Email Address
+            <input type="email" name="email">
+        </label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Club Membership (if applicable)</legend>
+
+        <label><input type="checkbox"> UCI-Affiliated National Federation</label>
+        <label><input type="checkbox"> British Cycling</label>
+        <label><input type="checkbox"> Fédération Française de Cyclisme</label>
+        <label><input type="checkbox"> Federació Catalana de Ciclisme</label>
+        <label><input type="checkbox"> Other
+            <input type="text" class="inline-input">
+        </label>
+        <label><input type="checkbox"> None</label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Previous Competitive Cycling Experience</legend>
+
+        <label><input type="checkbox"> None</label>
+        <label><input type="checkbox"> Local Trail / Community Races</label>
+        <label><input type="checkbox"> Enduro / Downhill Regional Events</label>
+        <label><input type="checkbox"> Cross-Country (XCO)</label>
+        <label><input type="checkbox"> One Season</label>
+        <label><input type="checkbox"> Two or More Seasons</label>
+        <label><input type="checkbox"> Elite / UCI-licensed Rider</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cycling License</legend>
+
+        <label><input type="radio" name="license"> None</label>
+        <label><input type="radio" name="license"> National Federation License</label>
+        <label><input type="radio" name="license"> UCI License</label>
+
+        <label>License Number (if applicable)
+            <input type="text">
+        </label>
+    </fieldset>
+
+  
+    <fieldset>
+        <legend>Emergency Contact</legend>
+
+        <label>Name
+            <input type="text">
+        </label>
+
+        <label>Relationship
+            <input type="text">
+        </label>
+
+        <label>Phone Number
+            <input type="tel">
+        </label>
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>Rider Agreement</legend>
+
+        <p class="agreement">
+            I agree to abide by all rules and safety regulations of the Bike Race Series (BRS).
+            I understand that mountain biking is inherently dangerous and involves the risk
+            of serious injury or death. I acknowledge that participation is voluntary.
+        </p>
+
+        <p class="agreement">
+            By signing below, I waive all liability and indemnify BRS, its organizers,
+            volunteers, affiliates, and race venues from any claims or damages.
+        </p>
+
+        <label>Rider's Signature
+            <input type="text">
+        </label>
+
+        <label>Date
+            <input type="date">
+        </label>
+
+        <label>Parent/Guardian Signature (if under 18)
+            <input type="text">
+        </label>
+    </fieldset>
+
+    <button type="submit">Submit Registration</button>
+
+</div>
+
+</body>
+</html>

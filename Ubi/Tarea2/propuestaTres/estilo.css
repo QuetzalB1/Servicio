@@ -1,0 +1,181 @@
+/* style.css - Estilos comunes para todas las páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.active {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.main-image {
+    width: 100%;
+    height: 300px;
+    background-color: #bdc3c7;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+/* Estilos específicos para la página de inicio (Home) */
+.upcoming-events {
+    margin-top: 40px;
+}
+
+.upcoming-events h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.event {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #e74c3c;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para la página About */
+.content-section {
+    margin-top: 20px;
+}
+
+.content-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mission-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #3498db;
+    font-style: italic;
+}
+
+.vision-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #2ecc71;
+}
+
+.info-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Estilos específicos para la página Contact */
+.contact-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.contact-content h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.email-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.email-address {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 15px 0;
+}
+
+.response-note {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 15px;
+}
+
+/* Footer común */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+}
