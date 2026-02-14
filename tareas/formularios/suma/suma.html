@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Menu</a>
+    </nav>
+    <h1>SUMA</h1>
+    <div>
+        <label>Valor A =</label>
+        <input type="number" id="cajaDeNumeroA"/>
+        <br>
+
+        <label for="">Valor B</label>
+        <input type="number" id="cajaDeNumeroB">
+        <br>
+
+        <label for="">El resultado es:</label>
+        <label for="" id="resultado"></label>
+        <br>
+        <br>
+
+        <input type="button" value="Sumar" onclick="sumar()"/>
+
+        
+    </div>
+
+    <script>
+        function sumar(){
+            var A = document.getElementById("cajaDeNumeroA");
+            var B = document.getElementById("cajaDeNumeroB");
+            var temp = document.getElementById("resultado");
+
+            var suma = parseInt(A.value) + parseInt(B.value);
+
+            
+            temp.innerText = suma;
+
+        }
+        
+    </script>
+</body>
+</html>

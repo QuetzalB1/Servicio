@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">Menu</a>
+    </nav>
+    <h1>CURP</h1>
+    <div>
+        <label>Nombre</label>
+        <input type="text" id="cajaDeTextNombre" />
+        <br />
+
+        <label for="">Apellido Paterno</label>
+        <input type="text" id="cajaDeTextApellido">
+        <br>
+
+        <label for="">Apellido Materno</label>
+        <input type="text" id="cajaDeTextApellidoMa">
+        <br>
+
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" id="fecha">
+        <br>
+
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo" required>
+            <option value="H">Hombre</option>
+            <option value="M">Mujer</option>
+
+        </select>
+        <br>
+        <label for="estado">Lugar de Nacimiento</label>
+        <select name="estado" id="estado" required>
+            <option value="">Seleccione un estado</option>
+            <option value="AS">Aguascalientes</option>
+            <option value="BC">Baja California</option>
+            <option value="BS">Baja California Sur</option>
+            <option value="CC">Campeche</option>
+            <option value="CS">Chiapas</option>
+            <option value="CH">Chihuahua</option>
+            <option value="CL">Coahuila</option>
+            <option value="CM">Colima</option>
+            <option value="DF">Ciudad de México</option>
+            <option value="DG">Durango</option>
+            <option value="GT">Guanajuato</option>
+            <option value="GR">Guerrero</option>
+            <option value="HG">Hidalgo</option>
+            <option value="JC">Jalisco</option>
+            <option value="MC">México</option>
+            <option value="MN">Michoacán</option>
+            <option value="MS">Morelos</option>
+            <option value="NT">Nayarit</option>
+            <option value="NL">Nuevo León</option>
+            <option value="OC">Oaxaca</option>
+            <option value="PL">Puebla</option>
+            <option value="QT">Querétaro</option>
+            <option value="QR">Quintana Roo</option>
+            <option value="SP">San Luis Potosí</option>
+            <option value="SL">Sinaloa</option>
+            <option value="SR">Sonora</option>
+            <option value="TC">Tabasco</option>
+            <option value="TS">Tamaulipas</option>
+            <option value="TL">Tlaxcala</option>
+            <option value="VZ">Veracruz</option>
+            <option value="YN">Yucatán</option>
+            <option value="ZS">Zacatecas</option>
+        </select>
+
+        <input type="button" value="Guardar" onclick="obtenerDatos()" />
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
