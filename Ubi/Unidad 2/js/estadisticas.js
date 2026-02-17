@@ -23,7 +23,7 @@ function getChamberFromUrl() {
 }
 
 function getJsonPath(chamber) {
-    return chamber === 'house' ? '/datos/house.json' : '/datos/senado.json';
+    return chamber === "house" ? "datos/house_data.json" : "datos/senado.json";
 }
 
 async function loadMembers() {
