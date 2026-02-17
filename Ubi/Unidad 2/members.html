@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TGIF - Congress Members</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">TGIF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="members.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Congress 113
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="members.html?chamber=senate">Senate</a></li>
+                            <li><a class="dropdown-item" href="members.html?chamber=house">House</a></li>
+                            <li><a class="dropdown-item" href="estadisticas.html">Estadisticas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <section id="senate-info" class="d-none">
+            <h2>Senators</h2>
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution...</p>
+        </section>
+
+        <section id="house-info" class="d-none">
+            <h2>Congressmen</h2>
+            <p>The major power of the House is to pass federal legislation that affects the entire country...</p>
+        </section>
+
+        <section class="card mb-4 mt-3">
+            <div class="card-body">
+                <div class="row g-3 align-items-end">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label d-block">Filtrar por partido</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input party-filter" type="checkbox" value="D" id="chkD" checked>
+                            <label class="form-check-label" for="chkD">Demócrata (D)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input party-filter" type="checkbox" value="R" id="chkR" checked>
+                            <label class="form-check-label" for="chkR">Republicano (R)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input party-filter" type="checkbox" value="ID" id="chkI" checked>
+                            <label class="form-check-label" for="chkI">Independiente (ID)</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="stateSelect" class="form-label">Filtrar por estado</label>
+                        <select id="stateSelect" class="form-select">
+                            <option value="ALL" selected>Todos</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Partido</th>
+                        <th>Estado</th>
+                        <th>Antigüedad</th>
+                        <th>% Votos con partido</th>
+                    </tr>
+                </thead>
+                <tbody id="memberTbody"></tbody>
+            </table>
+        </div>
+        <p class="text-muted" id="countLabel"></p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

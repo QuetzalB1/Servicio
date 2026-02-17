@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "chamber": "House",
+      "members": [
+        { "first_name": "Ralph", "last_name": "Abraham", "party": "R", "state": "LA", "district": "5", "seniority": "5", "votes_with_party_pct": 95.82, "url": "https://abraham.house.gov" },
+        { "first_name": "Alma", "last_name": "Adams", "party": "D", "state": "NC", "district": "12", "seniority": "7", "votes_with_party_pct": 99.12, "url": "https://adams.house.gov" },
+        { "first_name": "Robert", "last_name": "Aderholt", "party": "R", "state": "AL", "district": "4", "seniority": "23", "votes_with_party_pct": 94.05, "url": "https://aderholt.house.gov" },
+        { "first_name": "Pete", "last_name": "Aguilar", "party": "D", "state": "CA", "district": "31", "seniority": "5", "votes_with_party_pct": 98.79, "url": "https://aguilar.house.gov" },
+        { "first_name": "Justin", "last_name": "Amash", "party": "ID", "state": "MI", "district": "3", "seniority": "9", "votes_with_party_pct": 60.10, "url": "https://amash.house.gov" }
+      ]
+    }
+  ]
+}

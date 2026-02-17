@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGIF - Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/logo.css">
+</head>
+<body>
+
+    <header class="container py-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="logo">TGIF</h1>
+            <a href="mailto:info@tgif.net" class="text-decoration-none">✉ info@tgif.net</a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-top border-bottom mb-4">
+        <div class="container">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Home</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        Congress 113
+                    </a>
+                    <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="members.html?chamber=senate">Senate</a></li>
+    <li><a class="dropdown-item" href="members.html?chamber=house">House</a></li>
+    <li><a class="dropdown-item" href="estadisticas.html">Estadisticas</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>About Us</h2>
+                <p>Openness, accountability, and honesty define government transparency. In a free society, transparency is government's obligation to share information with citizens. It is at the heart of how citizens hold their public officials accountable. Here at TGIF we believe that government should be transparent.</p>
+                <p>Governments exist to serve the people. Information on how officials conduct the public business and spend taxpayer money must be readily available and easily understood. This transparency allows good and just governance. Transparency promotes accountability and provides information for citizens about what their Government is doing.</p>
+                
+                <div class="collapse" id="moreText">
+                    <p>We also believe that government should be participatory. Public engagement enhances the Government's effectiveness and improves the quality of its decisions. Knowledge is widely dispersed in society, and public officials benefit from having access to that dispersed knowledge. We invite you to use our site to become actively engaged in American government.</p>
+                    <p>TGIF works to disclose information in forms that the public can readily find and use. We solicit public feedback to identify information of greatest use to the public.</p>
+                </div>
+                <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#moreText">Read More...</button>
+
+                <h2 class="mt-4">Background History of Government Transparency</h2>
+                <p>In the West, the idea that government should be open to public scrutiny and susceptible to public opinion dates back at least to the time of the Enlightenment...</p>
+                <p>The United States passed its Freedom of Information Act (FOIA) in 1966, FOIAs, Access to Information Acts (AIAs) or equivalent laws were passed in Denmark and Norway in 1970.</p>
+            </div>
+
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <img src="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment" alt="Transparency Logo" class="img-fluid rounded shadow-sm">
+                    <p class="text-muted small mt-2">Government Transparency</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container mt-5 py-3 border-top text-center bg-light">
+        <p class="mb-0">&copy; 2023 TGIF | All Rights Reserved</p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
