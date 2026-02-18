@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados</title>
+</head>
+
+<body onload="cargarEstados()">
+    <select id="estadoSelect">
+        <option value="">Seleccione un estado</option>
+    </select>
+    <script>
+		    /**
+         * Origen de datos, puede ser una API, base de datos, etc.
+         * En este caso, simulamos una API con datos estáticos, en las lineas comentadas.
+         * @returns {Promise<Array<{id: number, nombre: string}>>}
+         */
+        async function obtenerEstados() {
+            const response  = await fetch("https://utilidades.vmartinez84.xyz/api/CodigosPostales/Estados");
+            const estados = await response.json();
+            // const estados = [
+            //     { id: 1, nombre: "Estado 1" },
+            //     { id: 2, nombre: "Estado 2" },
+            //     { id: 3, nombre: "Estado 3" }
+            // ];
+            return estados;
+        }
+
+        async function cargarEstados() {
+            const estados = await obtenerEstados();
+            const estadoSelect = document.getElementById("estadoSelect");
+            estados.forEach(estado => {
+                const option = document.createElement("option");
+                option.value = estado.id;
+                option.textContent = estado.nombre;
+                estadoSelect.appendChild(option);
+            });
+        }
+    </script>
+</body>
+
+</html>

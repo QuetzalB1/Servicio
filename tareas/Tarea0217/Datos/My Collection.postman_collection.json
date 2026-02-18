@@ -1,0 +1,191 @@
+{
+  "info": {
+    "_postman_id": "2cadc740-c8ac-4af2-a2b6-51105932a235",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52194204",
+    "_collection_link": "https://go.postman.co/collection/52194204-2cadc740-c8ac-4af2-a2b6-51105932a235?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "clabes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/Clabes/50",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "Clabes",
+            "50"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "dragonball",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://dragonball-api.com/api/characters/",
+          "protocol": "https",
+          "host": [
+            "dragonball-api",
+            "com"
+          ],
+          "path": [
+            "api",
+            "characters",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cpEstados",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/CodigosPostales/Estados",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "CodigosPostales",
+            "Estados"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "estadoNayarit",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/CodigosPostales/Nayarit/Alcaldias",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "CodigosPostales",
+            "Nayarit",
+            "Alcaldias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cp",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/CodigosPostales/55114",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "CodigosPostales",
+            "55114"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cpPorNombre",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/CodigosPostales/santa%20clara/Buscar",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "CodigosPostales",
+            "santa%20clara",
+            "Buscar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cpAleatorio",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/CodigosPostales/Aleatorio",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "CodigosPostales",
+            "Aleatorio"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cpMorelosAleatorio",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://utilidades.vmartinez84.xyz/api/CodigosPostales/Estados/Morelos/Aleatorio",
+          "protocol": "https",
+          "host": [
+            "utilidades",
+            "vmartinez84",
+            "xyz"
+          ],
+          "path": [
+            "api",
+            "CodigosPostales",
+            "Estados",
+            "Morelos",
+            "Aleatorio"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
